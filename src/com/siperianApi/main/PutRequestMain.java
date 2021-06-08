@@ -8,6 +8,7 @@ import com.siperian.sif.message.Field;
 import com.siperian.sif.message.Record;
 import com.siperian.sif.message.RecordKey;
 import com.siperian.sif.message.mrm.PutRequest;
+import com.siperianApi.putRequest.PutRequestFactory;
 
 /**
  * 
@@ -47,15 +48,19 @@ public class PutRequestMain {
 
 		Record record = getRecord();
 		putRequest.setRecord(record); //sets the record to the put request
+		
+		PutRequest putRequest2PutRequest = new PutRequestFactory().getputRequest();
 
 		return putRequest;
 	}
 
+	
+
 	//create the Record
 	private static Record getRecord() {
 	 Record record = new Record();
-	 record.setSiperianObjectUid("BASE_OBJECT.C_B_TEST"); // BASE
-	 record.setField(new Field("TEST_COL1", "TEST_COL2"));
+	 record.setSiperianObjectUid("BASE_OBJECT.C_B_TEST_BO"); // BASE
+	 record.setField(new Field("TEST_COL2", "TEST_COL5"));
 
 	 return record;
 
@@ -64,8 +69,8 @@ public class PutRequestMain {
 	//create the RecordKEY
 	private static RecordKey getRecordKey() {
 		RecordKey recordkey = new RecordKey();
-		recordkey.setSourceKey("100");
-		recordkey.setSystemName("LOOKUP");
+		recordkey.setSourceKey("500");
+		recordkey.setSystemName("Admin");
 		return recordkey;
 	}
 }
