@@ -25,7 +25,7 @@ public class CSVFileReader  {
 
         for (EnconomiclkpBinding enconomiclkpBinding : beans) {
                 enconomiclkpBinding.getCode();
-                System.out.println(enconomiclkpBinding.getCode()+ " and " + enconomiclkpBinding.getDescription() + " and " + enconomiclkpBinding.getCategory() );
+                System.out.println(enconomiclkpBinding.getCode()+ " and " + enconomiclkpBinding.getDescription() + " and " + enconomiclkpBinding.getCategory() + " and " + enconomiclkpBinding.getEcnomic_ind_cd() );
 
         }
         return beans;

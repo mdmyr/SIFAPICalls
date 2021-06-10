@@ -1,38 +1,36 @@
-Code|Description|Category
-000|Blank|CAT1
-100|Large Business|CAT1
-200|Small Business Enterprise|CAT1
-300|Small Business|CAT1
-400|Minority-Owned Business Enterprise|CAT1
-500|Blank|CAT1
-600|AbilityOne Program|CAT1
-700|Blank|CAT1
-800|Blank|CAT1
-900|Non-Classified Vendor|CAT1
-000|Blank|CAT2
-010|Women Owned Business Enterprise|CAT2
-020|Veteran-Owned Business|CAT2
-030|Service Disabled Veteran-Owned Business|CAT2
-040|Women & Veteran Owned Business|CAT2
-050|Disadvantaged Business Enterprise|CAT2
-060|Disability-Owned Business Enterprise|CAT2
-070|Blank|CAT2
-080|Blank|CAT2
-090|Non-Classified Vendor|CAT2
-000|Blank|CAT3
-001|Historically Under-Utilized Business Zones|CAT3
-002|Green|CAT3
-003|Blank|CAT3
-004|Blank|CAT3
-005|Blank|CAT3
-006|Blank|CAT3
-007|Blank|CAT3
-008|Iowa|CAT3
-009|Non-Classified Vendor|CAT3
-000|African American|ETH1
-100|Hispanic American|ETH2
-200|Native American|ETH3
-300|Asian Pacific (Island)|ETH4
-400|Asian Indian (Subcontinental)|ETH5
-500|None of the above|ETH6
-
+000|Blank|CAT1|A01
+100|Large Business|CAT1|A02
+200|Small Business Enterprise|CAT1|A03
+300|Small Business|CAT1|A04
+400|Minority-Owned Business Enterprise|CAT1|A05
+500|Blank|CAT1|A06
+600|AbilityOne Program|CAT1|A07
+700|Blank|CAT1|A08
+800|Blank|CAT1|A09
+900|Non-Classified Vendor|CAT1|A10
+000|Blank|CAT2|A11
+010|Women Owned Business Enterprise|CAT2|A12
+020|Veteran-Owned Business|CAT2|A13
+030|Service Disabled Veteran-Owned Business|CAT2|A14
+040|Women & Veteran Owned Business|CAT2|A15
+050|Disadvantaged Business Enterprise|CAT2|A16
+060|Disability-Owned Business Enterprise|CAT2|A17
+070|Blank|CAT2|A18
+080|Blank|CAT2|A19
+090|Non-Classified Vendor|CAT2|A20
+000|Blank|CAT3|A21
+001|Historically Under-Utilized Business Zones|CAT3|A22
+002|Green|CAT3|A23
+003|Blank|CAT3|A24
+004|Blank|CAT3|A25
+005|Blank|CAT3|A26
+006|Blank|CAT3|A27
+007|Blank|CAT3|A28
+008|Iowa|CAT3|A29
+009|Non-Classified Vendor|CAT3|A30
+000|African American|ETH|A31
+100|Hispanic American|ETH|A32
+200|Native American|ETH|A33
+300|Asian Pacific (Island)|ETH|A34
+400|Asian Indian (Subcontinental)|ETH|A35
+500|None of the above|ETH|A36

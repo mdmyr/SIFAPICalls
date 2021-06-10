@@ -4,7 +4,7 @@ package com.siperianApi.utilities;
  *  this is by positions ... be careful
  */
 
-import com.opencsv.bean.CsvBindByName;
+
 import com.opencsv.bean.CsvBindByPosition;
 
 public class EnconomiclkpBinding {
@@ -14,8 +14,15 @@ public class EnconomiclkpBinding {
     private String Description;
     @CsvBindByPosition(position = 2)
     private String Category;
+	@CsvBindByPosition(position = 3)
+	private String Ecnomic_ind_cd;
 
-
+	public String getEcnomic_ind_cd() {
+		return Ecnomic_ind_cd;
+	}
+	public void setEcnomic_ind_cd(String ecnomic_ind_cd) {
+		Ecnomic_ind_cd = ecnomic_ind_cd;
+	}
 	public String getCode() {
 		return Code;
 	}

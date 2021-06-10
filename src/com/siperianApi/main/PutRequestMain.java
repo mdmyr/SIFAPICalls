@@ -1,12 +1,9 @@
 package com.siperianApi.main;
 
 import java.io.File;
-import java.util.Properties;
-
+import java.io.FileNotFoundException;
+import java.util.List;
 import com.siperian.sif.client.SiperianClient;
-import com.siperian.sif.message.Field;
-import com.siperian.sif.message.Record;
-import com.siperian.sif.message.RecordKey;
 import com.siperian.sif.message.mrm.PutRequest;
 import com.siperianApi.putRequest.PutRequestFactory;
 
@@ -17,27 +14,47 @@ import com.siperianApi.putRequest.PutRequestFactory;
  */
 public class PutRequestMain {
 
-	public static void main(String[] args) {
-		System.out.println("Printer");
+	public static void main(String[] args) throws IllegalStateException, FileNotFoundException {
+		System.out.println("Starting the put process.....");
 		
 		/** putRequest */
-		PutRequest putRequest =createPutRequest();
+		//	PutRequest putRequest =createPutRequest();
 
 		/** Create the Siperian client */
-		SiperianClient sipClient= createSiperianClient();
-		sipClient.process(putRequest);
+		//SiperianClient sipClient= createSiperianClient();
+		//sipClient.process(putRequest);
+		
+		executePutList(); // actual execution of the put requests
 
 }
 
-	private static SiperianClient createSiperianClient() {
-		
-		File configProperties = new File("properties/cmxserver.properties");
+	private static void executePutList() throws IllegalStateException, FileNotFoundException {
+		PutRequestFactory putRequestFactory = new PutRequestFactory();
+		List<PutRequest> putRequestList= putRequestFactory.getputRequest();
+		processPutRequest(putRequestList);
+
 	
+	}
+
+	private static void processPutRequest(List<PutRequest> putRequestList) {
+
+		for (PutRequest putRequest : putRequestList) {
+			SiperianClient sipClient =createSiperianClient();
+			sipClient.process(putRequest);
+			System.out.println("Put Process Completed!!");
+		}
+	}
+
+	private static SiperianClient createSiperianClient() {
+		//retuns the sifClient 
+		// set the properties here!
+		File configProperties = new File("properties/cmxserver.properties");	
 		SiperianClient sifClient = SiperianClient.newSiperianClient(configProperties);
 		return sifClient;
 	}
 
-	//creats a putRequest
+	/* Test purpose only!! **
+	//creates a putRequest
 	private static PutRequest createPutRequest() {
 		PutRequest putRequest = new PutRequest();
 		boolean generateSourceKey=true;
@@ -46,15 +63,16 @@ public class PutRequestMain {
 		RecordKey recordKey = getRecordKey();
 		putRequest.setRecordKey(recordKey); // sets the record to the put request
 
-		Record record = getRecord();
-		putRequest.setRecord(record); //sets the record to the put request
+		//Record record = getRecord();
+		//putRequest.setRecord(record); //sets the record to the put request
 		
-		PutRequest putRequest2PutRequest = new PutRequestFactory().getputRequest();
+		//PutRequest putRequest2PutRequest = new PutRequestFactory().getputRequest();
 
 		return putRequest;
 	}
 
 	
+	/** for testing purpse only  
 
 	//create the Record
 	private static Record getRecord() {
@@ -73,4 +91,5 @@ public class PutRequestMain {
 		recordkey.setSystemName("Admin");
 		return recordkey;
 	}
+	*/
 }
