@@ -14,6 +14,7 @@ import com.siperianApi.utilities.EnconomiclkpBinding;
 public class PutRequestFactory {  
     private List<EnconomiclkpBinding> fileDetails;
 
+    //asks generatePutRequest Method to generate the list and returns the list
     public List<PutRequest> getputRequest() throws IllegalStateException, FileNotFoundException {
         // single purpose per class is a good practice.
         // read the csv file and create an object for the csv file.
@@ -77,5 +78,9 @@ public class PutRequestFactory {
                 
             }
             return putRequestList;
+            // returns putlist :)      
+            
+            //greate
+            
 	}
 }

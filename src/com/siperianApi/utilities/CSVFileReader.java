@@ -13,10 +13,10 @@ public class CSVFileReader  {
         // step1: create the object as inputformat
         // parse the files using the inputformat.
 
-
+// This is the main file reader app that sends the objects to put request
        public List<EnconomiclkpBinding> genFileReaderOBJ() throws IllegalStateException, FileNotFoundException{
 
-        String fileName = "InputFiles/EnconomicInd_Lkp.csv";
+        String fileName = "InputFiles/EnconomicInd_Lkp_2.csv";
         List<EnconomiclkpBinding> beans = new CsvToBeanBuilder(new FileReader(fileName))
                 .withType(EnconomiclkpBinding.class)
                 .withSeparator('|') // important

@@ -13,7 +13,7 @@ public class CSFFileReaderMain  {
          csvFileReader.genFileReaderOBJ();
   
         System.out.println("+++++++++++++++++++++++++++++++++++++");
-        String fileName = "C:\\Users\\yraghunp\\eclipse-workspace23\\SiperianPutCall\\InputFiles\\EnconomicInd_Lkp.csv";
+        String fileName = "C:\\Users\\yraghunp\\eclipse-workspace23\\SiperianPutCall\\InputFiles\\EnconomicInd_Lkp_2.csv";
 
         List<EnconomiclkpBinding> beans = new CsvToBeanBuilder(new FileReader(fileName))
                 .withType(EnconomiclkpBinding.class)

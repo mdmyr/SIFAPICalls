@@ -14,6 +14,12 @@ import com.siperianApi.putRequest.PutRequestFactory;
  */
 public class PutRequestMain {
 
+	
+	/** 
+	 * @param args
+	 * @throws IllegalStateException
+	 * @throws FileNotFoundException
+	 */
 	public static void main(String[] args) throws IllegalStateException, FileNotFoundException {
 		System.out.println("Starting the put process.....");
 		
@@ -28,6 +34,11 @@ public class PutRequestMain {
 
 }
 
+	
+	/** 
+	 * @throws IllegalStateException
+	 * @throws FileNotFoundException
+	 */
 	private static void executePutList() throws IllegalStateException, FileNotFoundException {
 		PutRequestFactory putRequestFactory = new PutRequestFactory();
 		List<PutRequest> putRequestList= putRequestFactory.getputRequest();
@@ -36,6 +47,10 @@ public class PutRequestMain {
 	
 	}
 
+	
+	/** 
+	 * @param putRequestList
+	 */
 	private static void processPutRequest(List<PutRequest> putRequestList) {
 
 		for (PutRequest putRequest : putRequestList) {
@@ -45,6 +60,10 @@ public class PutRequestMain {
 		}
 	}
 
+	
+	/** 
+	 * @return SiperianClient
+	 */
 	private static SiperianClient createSiperianClient() {
 		//retuns the sifClient 
 		// set the properties here!

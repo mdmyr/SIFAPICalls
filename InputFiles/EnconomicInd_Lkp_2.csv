@@ -1,0 +1,23 @@
+1|Large Business|CAT1|A02
+2|Small Business Enterprise|CAT1|A03
+3|Small Business|CAT1|A04
+4|Minority-Owned Business Enterprise|CAT1|A05
+6|AbilityOne Program|CAT1|A07
+9|Non-Classified Vendor|CAT1|A10
+1|Women Owned Business Enterprise|CAT2|A12
+2|Veteran-Owned Business|CAT2|A13
+3|Service Disabled Veteran-Owned Business|CAT2|A14
+4|Women & Veteran Owned Business|CAT2|A15
+5|Disadvantaged Business Enterprise|CAT2|A16
+6|Disability-Owned Business Enterprise|CAT2|A17
+9|Non-Classified Vendor|CAT2|A20
+1|Historically Under-Utilized Business Zones|CAT3|A22
+2|Green|CAT3|A23
+8|Iowa|CAT3|A29
+9|Non-Classified Vendor|CAT3|A30
+0|African American|ETH|A31
+1|Hispanic American|ETH|A32
+2|Native American|ETH|A33
+3|Asian Pacific (Island)|ETH|A34
+4|Asian Indian (Subcontinental)|ETH|A35
+5|None of the above|ETH|A36
